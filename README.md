@@ -1,12 +1,6 @@
 
 [![Tamunoseimiebi](https://circleci.com/gh/Tamunoseimiebi/DevOps_Microservices.svg?style=svg)](https://app.circleci.com/Tamunoseimiebi/DevOps_Microservices)
 
-# Example:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
-
-# Example for specific branch:
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs/tree/teesloane-patch-5.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs/?branch=teesloane-patch-5)
-
 ## Project Overview
 Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
 * Test your project code using linting
