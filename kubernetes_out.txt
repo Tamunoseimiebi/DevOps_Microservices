@@ -1,31 +1,33 @@
-* Serving Flask app "app" (lazy loading)
- * Environment: production
+# First attempt at running kubernetes
+voclabs:~/environment/DevOps_Microservices (master) $ ./run_kubernetes.sh 
+pod/ml-app created
+NAME     READY   STATUS    RESTARTS   AGE
+ml-app   0/1     Pending   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+# Output after running run_kubernetes script
+NAME     READY   STATUS    RESTARTS   AGE
+ml-app   1/1     Running   0          6m27s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+
+# Prediction output
+* Environment: production
    WARNING: Do not use the development server in a production environment.
    Use a production WSGI server instead.
  * Debug mode: on
  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 248-885-561
-[2022-07-15 09:26:20,582] INFO in app: JSON payload: 
+ * Debugger PIN: 210-590-147
+[2022-07-15 11:55:32,756] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2022-07-15 09:26:20,596] INFO in app: Inference payload DataFrame: 
+[2022-07-15 11:55:32,792] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2022-07-15 09:26:20,604] INFO in app: Scaling Payload: 
+[2022-07-15 11:55:32,812] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2022-07-15 09:26:20,607] INFO in app: output prediction: 
+[2022-07-15 11:55:32,818] INFO in app: output prediction: 
 [20.35373177134412]
-127.0.0.1 - - [15/Jul/2022 09:26:20] "POST /predict HTTP/1.1" 200 -
-[2022-07-15 09:31:27,300] INFO in app: JSON payload: 
-{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2022-07-15 09:31:27,311] INFO in app: Inference payload DataFrame: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2022-07-15 09:31:27,320] INFO in app: Scaling Payload: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2022-07-15 09:31:27,323] INFO in app: output prediction: 
-[20.35373177134412]
-127.0.0.1 - - [15/Jul/2022 09:31:27] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jul/2022 11:55:32] "POST /predict HTTP/1.1" 200 -
