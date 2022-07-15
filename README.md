@@ -1,4 +1,4 @@
-[!(https://circleci.com/gh/Tamunoseimiebi/DevOps_Microservices.svg?style=svg)](https://circleci.com/gh/Tamunoseimiebi/DevOps_Microservices)
+[![Tamunoseimiebi](https://circleci.com/gh/Tamunoseimiebi/DevOps_Microservices.svg?style=svg]](https://circleci.com/gh/Tamunoseimiebi/DevOps_Microservices)
 ## Project Overview
 Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
 * Test your project code using linting
