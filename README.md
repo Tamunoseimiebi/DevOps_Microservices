@@ -1,5 +1,4 @@
-[![Tamunoseimiebi](https://circleci.com/gh/Tamunoseimiebi/DevOps_Microservices.svg?style=svg]](https://app.circleci.com/gh/Tamunoseimiebi/DevOps_Microservices)
-# Template:
+
 [![Tamunoseimiebi](https://circleci.com/gh/Tamunoseimiebi/DevOps_Microservices.svg?style=svg)](https://app.circleci.com/Tamunoseimiebi/DevOps_Microservices)
 
 # Example:
